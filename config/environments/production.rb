@@ -12,7 +12,7 @@ SampleApp::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  config.assets.compress = false    # WAS TRUE - CHANGED TO FIX ERROR BETWEEN UGLIFIER AND WINDOWS SCRIPTING HOST!!!  SEE: https://github.com/rails/rails/issues/2847
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
